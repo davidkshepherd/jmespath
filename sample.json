@@ -1,0 +1,34 @@
+{
+    "accounts":{
+    "1234567654321":{
+    "account":"1234567654321",
+    "alias":"company-dev-1",
+    "division":"ABCD",
+    "email":"company-dev-1@company.com",
+    "environment":"Dev",
+    "regions":[
+    "us-east-1"
+    ],
+    "status":"Active",
+    "title":"ABCD Dev",
+    "name":"company-dev-1",
+    "owner-id":"1234567654321",
+    "type":"Dev"
+    },
+    "555667766555":{
+    "account":"555667766555",
+    "alias":"company-prod-1",
+    "division":"ABCD",
+    "email":"company-prod-1@company.com",
+    "environment":"Prod",
+    "regions":[
+    "us-west-1"
+    ],
+    "status":"Active",
+    "title":"ABCD Prod",
+    "name":"company-prod-1",
+    "owner-id":"555667766555",
+    "type":"Prod"
+    }
+  }
+}
