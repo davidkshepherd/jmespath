@@ -1,0 +1,43 @@
+{
+  "description": "Approved exceptions:,
+  "exceptions": {
+    "123123123123": {
+      "control1": {
+        "tag:internalappteam": [
+          "appTeam1"
+        ],
+        "tag:externalappteam": [
+          "appTeam2"
+        ]
+      },
+      "control2": {
+        "tag:internalappteam": [
+          "appTeam1"
+        ],
+        "tag:externalappteam": [
+          "appTeam2"
+        ]
+      }
+    },
+    "98765432100": {
+      "control3": {
+        "tag:internalappteam": [
+          "appTeam1",
+          "appTeam3",
+          "appTeam7"
+        ],
+        "tag:externalappteam": [
+          "appTeam2"
+        ]
+      },
+      "control4": {
+        "tag:internalappteam": [
+          "appTeam1"
+        ],
+        "tag:externalappteam": [
+          "appTeam2"
+        ]
+      }
+    }
+  }
+}
