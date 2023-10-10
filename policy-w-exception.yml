@@ -1,6 +1,6 @@
 policies:
   name: delete-resource-not-using-kms-with-exceptions
-  resource: aws.resource-name
+  resource: aws.resource
 filters:
 - type: value
   key: KmsMasterKeyId
