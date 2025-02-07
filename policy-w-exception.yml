@@ -1,17 +1,17 @@
 policies:
   name: delete-resource-not-using-kms-with-exceptions
   resource: aws.resource
-filters:
-- type: value
+  filters:
+  - type: value
   key: KmsMasterKeyId
   value: absent
-- not:
-  - type: value
-    key: tag:appteam
-    op: not-in
-    value_from:
-      expr: not_null(exceptions."[account_id}", "control1", "tag:appteam", `[]`)
-      format: json
+  - not:
+    - type: value
+      key: tag:appteam
+      op: not-in
+      value_from:
+        expr: not_null(exceptions."[account_id}", "control1", "tag:appteam", `[]`)
+        format: json
       url: s3://my-bucket-name/approved-exceptions.json
-actions:
-  - type: delete
+  actions:
+    - type: delete
