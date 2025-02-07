@@ -13,5 +13,5 @@ filters:
       expr: not_null(exceptions."[account_id}", "control1", "tag:appteam", `[]`)
       format: json
       url: s3://my-bucket-name/approved-exceptions.json
-  actions:
+actions:
   - type: delete
