@@ -1,4 +1,4 @@
- policies:
+policies:
   - name: delete-resource-not-using-kms-with-exceptions
     resource: aws.s3
     filters:
@@ -16,12 +16,13 @@
     actions:
       - type: delete
 
-#  - name: delete-unencrypted-buckets
-#    resource: s3
-#    filters:
-#      - type: missing-statement
-#        statement_ids:
-#          - RequiredEncryptedPutObject
-#    actions:
-#      - type: delete
-#        remove-contents: true
+
+  - name: delete-unencrypted-buckets
+    resource: aws.s3
+    filters:
+      - type: missing-statement
+        statement_ids:
+          - RequiredEncryptedPutObject
+    actions:
+      - type: delete
+        remove-contents: true
