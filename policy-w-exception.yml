@@ -14,4 +14,4 @@ filters:
       format: json
       url: s3://my-bucket-name/approved-exceptions.json
   actions:
-  - delete:
+  - type: delete
