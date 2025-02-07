@@ -1,5 +1,5 @@
 {
-  "description": "Approved exceptions:",
+  "description": "Approved exceptions",
   "exceptions": {
     "123123123123": {
       "control1": {
